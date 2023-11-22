@@ -28,7 +28,8 @@ def search_yelp():
             'name': business['name'],
             'rating': business['rating'],
             'address': ', '.join(business['location']['display_address']),
-            'phone': business.get('phone', 'N/A')
+            'phone': business.get('phone', 'N/A'),
+            'url' : business.get('url')
         })
 
     return jsonify(results)  
