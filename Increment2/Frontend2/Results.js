@@ -13,6 +13,7 @@ function Results({ data }) {
           <p>Rating: {business.rating}</p>
           <p>Address: {business.address}</p>
           <p>Phone: {business.phone}</p>
+          <p>Website: <a href={business.url} target="_blank" rel="noopener noreferrer">Click To Munch</a></p>
         </li>
       ))}
     </ul>
